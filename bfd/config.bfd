@@ -639,6 +639,10 @@ case "${targ}" in
     targ64_selvecs="x86_64_elf64_nacl_vec x86_64_elf32_nacl_vec"
     targ_archs="$targ_archs bfd_arm_arch"
     ;;
+  i[3-7]86-*-telos*)
+    targ_defvec=i386_elf32_vec
+    targ_selvecs=
+    ;;
 #ifdef BFD64
   x86_64-*-darwin*)
     targ_defvec=x86_64_mach_o_vec
